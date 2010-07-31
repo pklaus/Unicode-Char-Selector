@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BackwardsCompatibleClassLookup</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>Unicode Char Selector</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.pklaus.widget.unicode_selector</string>
+	<key>CFBundleName</key>
+	<string>Unicode Char Selector</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.8.0</string>
+	<key>CFBundleVersion</key>
+	<string>0.8.0</string>
+	<key>CloseBoxInsetX</key>
+	<integer>17</integer>
+	<key>CloseBoxInsetY</key>
+	<integer>17</integer>
+	<key>Height</key>
+	<integer>218</integer>
+	<key>MainHTML</key>
+	<string>main.html</string>
+	<key>Width</key>
+	<integer>266</integer>
+</dict>
+</plist>

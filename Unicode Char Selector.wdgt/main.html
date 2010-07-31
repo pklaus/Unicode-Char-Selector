@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleSlider.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="front">
+        <img id="frontImg" src="Parts/Images/front.png" alt="">
+        <div id="info"></div>
+        <div id="offset_slider" style="height: 22px; -apple-dashboard-region: dashboard-region(control rectangle); "></div>
+        <input id="base" type="text" name="" value="0x2192" onkeydown="update(event)" onchange="update(event)" onkeypress="update(event)" onkeyup="update(event)">
+        <input id="result_code" type="text" name="" value="0x2194">
+        <input id="result_sign" type="text" name="" value="↔">
+        <div id="lbl_base_code"></div>
+        <div id="lbl_resulting_sign"></div>
+        <div id="lbl_resulting_code"></div>
+    </div>
+    <div id="back">
+        <img id="backImg" src="Parts/Images/back.png" alt="">
+        <div id="done"></div>
+        <div id="text3"></div>
+        <div id="image"><img src="Images/swirl_grafik_fuer-dashboard-about.png" id="inner_image"></div>
+        <div id="text4"></div>
+        <div id="glassButton"></div>
+    </div>
+</body>
+</html>
