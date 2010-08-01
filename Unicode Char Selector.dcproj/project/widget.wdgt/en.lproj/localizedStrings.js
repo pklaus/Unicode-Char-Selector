@@ -8,7 +8,9 @@ var localizedStrings = {
     "Ausgangsadresse": "Base Hex Code",
     "eingestellter Code": "Code with Offset",
     "Fertig": "Done",
-    "resultierendes Zeichen:": "Resulting Char:"
+    "resultierendes Zeichen": "Resulting Char",
+    "Schieberegler Empfindlichkeit": "Slider Sensitivity"
 };
+
 
 

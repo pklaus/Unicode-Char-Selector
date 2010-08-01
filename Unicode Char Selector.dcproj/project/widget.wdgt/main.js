@@ -40,6 +40,7 @@ function hide()
 function show()
 {
     // Restart any timers that were stopped on hide
+    updateResults();
 }
 
 //
@@ -64,6 +65,8 @@ function sync()
 //
 function showBack(event)
 {
+    document.getElementById("multiplicator").value = getSliderMultiplicator();
+    
     var front = document.getElementById("front");
     var back = document.getElementById("back");
 
@@ -93,7 +96,9 @@ function showFront(event)
     if (window.widget) {
         widget.prepareForTransition("ToFront");
     }
-
+    
+    updateResults();
+    
     front.style.display="block";
     back.style.display="none";
 
@@ -122,14 +127,14 @@ if (window.widget) {
     if(to == "dec") {
       out=parseInt(inp,16);
       if(isNaN(out)) {
-        alert("fehlerhafter Eingabewert");
+        alert("Could not convert value to decimal.");
         out="";
       }
     } else {
       inp=parseInt(inp);
       out="";
       if(isNaN(inp)) {
-        alert("fehlerhafter Eingabewert");
+        alert("Could not convert value to hex.");
       } else {
         while(inp != 0) {
           out=hex.charAt(inp%16)+out;
@@ -140,29 +145,66 @@ if (window.widget) {
     return(out);
   }
 
-function update(event)
+function inputHandler(event)
 {
-    update_results();
+    updateResults();
 }
 
-sliderpos = 0;
-function sliderhandler(value)
+var sliderPos = 0.0;
+function sliderHandler(value)
 {
-    //alert(value);
-    sliderpos = Math.round(10*value);
-    update_results();
+    sliderPos = value;
+    updateResults();
 }
 
-function update_results()
+function updateResults()
 {
-    //document.getElementById("result_sign").value = unescape("\\u"+document.getElementById("base").value);
-    //document.getElementById("result_sign").value = String.fromCharCode(Math.round(rechne(document.getElementById("base").value,'dec')+10.0*document.getElementById("offset").value));
-    document.getElementById("result_code").value = "0x"+rechne(rechne(document.getElementById("base").value.replace("0x",""),'dec')+sliderpos,'hex');
-    document.getElementById("result_sign").value = String.fromCharCode(rechne(document.getElementById("base").value,'dec')+sliderpos);
+    var sliderPosMult = Math.round(getSliderMultiplicator()*sliderPos);
+
+    document.getElementById("result_code").value = "0x"+rechne(rechne(document.getElementById("base").value.replace("0x",""),'dec')+sliderPosMult,'hex');
+    
+    document.getElementById("result_sign").value = String.fromCharCode(rechne(document.getElementById("base").value,'dec')+sliderPosMult);
 }
 
 
-function open_website(event)
+function openWebsite(event)
 {
     widget.openURL('http://www.philippklaus.de/');
+}
+
+var sliderMultiplicator = -1;
+function getSliderMultiplicator()
+{
+    if(window.widget)
+    {
+        if (sliderMultiplicator != -1)
+        {
+            return sliderMultiplicator;
+        }
+        else
+        {
+            var preset = 10;
+            sliderMultiplicator = widget.preferenceForKey("sliderMultiplicator");
+            if (sliderMultiplicator == undefined)
+            {
+                widget.setPreferenceForKey(preset,"sliderMultiplicator");
+                sliderMultiplicator = preset;
+            }
+            return sliderMultiplicator;
+        }
+    }
+}
+function setSliderMultiplicator(value)
+{
+    sliderMultiplicator = value;
+    if(window.widget)
+    {
+        widget.setPreferenceForKey(value,"sliderMultiplicator");
+
+    }
+}
+
+function changedMultiplicator(event)
+{
+    setSliderMultiplicator(event.target.value);
 }

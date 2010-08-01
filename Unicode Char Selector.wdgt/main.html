@@ -16,9 +16,9 @@
         <img id="frontImg" src="Parts/Images/front.png" alt="">
         <div id="info"></div>
         <div id="offset_slider" style="height: 22px; -apple-dashboard-region: dashboard-region(control rectangle); "></div>
-        <input id="base" type="text" name="" value="0x2192" onkeydown="update(event)" onchange="update(event)" onkeypress="update(event)" onkeyup="update(event)">
-        <input id="result_code" type="text" name="" value="0x2194">
-        <input id="result_sign" type="text" name="" value="↔">
+        <input id="base" type="text" name="" value="0x2192" onkeydown="inputHandler(event)" onchange="inputHandler(event)" onkeypress="inputHandler(event)" onkeyup="inputHandler(event)">
+        <input id="result_code" type="text" name="" value="0x2192">
+        <input id="result_sign" type="text" name="" value="→">
         <div id="lbl_base_code"></div>
         <div id="lbl_resulting_sign"></div>
         <div id="lbl_resulting_code"></div>
@@ -26,10 +26,15 @@
     <div id="back">
         <img id="backImg" src="Parts/Images/back.png" alt="">
         <div id="done"></div>
-        <div id="text3"></div>
+        <div id="PhilippKlaus" onclick="openWebsite(event)"></div>
         <div id="image"><img src="Images/swirl_grafik_fuer-dashboard-about.png" id="inner_image"></div>
-        <div id="text4"></div>
-        <div id="glassButton"></div>
+        <div id="made-by"></div>
+        <select id="multiplicator" onchange="changedMultiplicator(event)">
+            <option id="option" value="10">x1</option>
+            <option id="option1" value="20">x2</option>
+            <option id="option2" value="50">x5</option>
+        </select>
+        <div id="lbl_multiplicator"></div>
     </div>
 </body>
 </html>

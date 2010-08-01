@@ -16,9 +16,9 @@
         <img id="frontImg" src="Parts/Images/front.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.frontimage" apple-style="image-theme: 1; image-shape: 3; image-opacity: 1.00; image-top-color: 1.0000,1.0000,1.0000; image-bottom-color: 0.6154,0.6154,0.6154; image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.5294,0.5294,0.5294; image-border-width: 1; shine-strength: 0.9; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">
         <div class="apple-no-children" id="info" apple-part="com.apple.Dashcode.part.infobutton" apple-default-image-visibility="hidden"></div>
         <div id="offset_slider" apple-part="com.apple.Dashcode.part.horizontalslider" class="apple-no-children" style="height: 22px; -apple-dashboard-region: dashboard-region(control rectangle); "></div>
-        <input id="base" type="text" name="" value="0x2192" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" onkeydown="update(event)" onchange="update(event)" onkeypress="update(event)" onkeyup="update(event)">
-        <input id="result_code" type="text" name="" value="0x2194" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield">
-        <input id="result_sign" type="text" name="" value="↔" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield">
+        <input id="base" type="text" name="" value="0x2192" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" onkeydown="inputHandler(event)" onchange="inputHandler(event)" onkeypress="inputHandler(event)" onkeyup="inputHandler(event)">
+        <input id="result_code" type="text" name="" value="0x2192" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield">
+        <input id="result_sign" type="text" name="" value="→" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield">
         <div id="lbl_base_code" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-text-overflow="ellipsis" apple-style="part-height-dependent: true;"></div>
         <div id="lbl_resulting_sign" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-text-overflow="ellipsis"></div>
         <div id="lbl_resulting_code" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-text-overflow="ellipsis"></div>
@@ -26,10 +26,15 @@
     <div id="back">
         <img id="backImg" src="Parts/Images/back.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.backimage" apple-style=" image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.1500,0.1500,0.1500; image-border-width: 3; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">
         <div id="done" class="apple-no-children" apple-part="com.apple.Dashcode.part.glassbutton"></div>
-        <div id="text3" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis"></div>
+        <div id="PhilippKlaus" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" onclick="openWebsite(event)"></div>
         <div apple-part="com.apple.Dashcode.part.imageLayout" id="image" apple-group="image"><img class="apple-hidden" src="Images/swirl_grafik_fuer-dashboard-about.png" id="inner_image" apple-group="image"></div>
-        <div id="text4" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis"></div>
-        <div id="glassButton" apple-part="com.apple.Dashcode.part.glassbutton" class="apple-no-children"></div>
+        <div id="made-by" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis"></div>
+        <select id="multiplicator" apple-part="com.apple.Dashcode.part.backpopupbutton" apple-group="popup" onchange="changedMultiplicator(event)">
+            <option class="apple-hidden" id="option" value="10">x1</option>
+            <option class="apple-hidden" id="option1" value="20">x2</option>
+            <option class="apple-hidden" id="option2" value="50">x5</option>
+        </select>
+        <div id="lbl_multiplicator" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" apple-style="part-height-dependent: true;"></div>
     </div>
 </body>
 </html>

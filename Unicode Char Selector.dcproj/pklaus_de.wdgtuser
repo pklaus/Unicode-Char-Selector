@@ -4,11 +4,11 @@
 <dict>
 	<key>Breakpoints</key>
 	<dict>
-		<key>widget.wdgt/main.js:162</key>
-		<string>-update_results</string>
+		<key>widget.wdgt/main.js:167</key>
+		<string>-updateResults</string>
 	</dict>
 	<key>CYLastWindowPosition</key>
-	<string>{690, 198}</string>
+	<string>{627, 217}</string>
 	<key>ContentSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -19,8 +19,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {756, 254}}</string>
-			<string>{{0, 264}, {756, 322}}</string>
+			<string>{{0, 0}, {1035, 341}}</string>
+			<string>{{0, 351}, {1035, 322}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
@@ -45,19 +45,19 @@
 		<string>penryn.local</string>
 	</dict>
 	<key>Design time language</key>
-	<string>de.lproj</string>
+	<string>en.lproj</string>
 	<key>MainSplitViewGeometry</key>
 	<dict>
 		<key>_indexOfCollapsedView</key>
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {244, 607}}</string>
-			<string>{{245, 0}, {757, 607}}</string>
+			<string>{{0, 0}, {244, 694}}</string>
+			<string>{{245, 0}, {1036, 694}}</string>
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
-	<string>122 134 1001 628 0 0 1280 778 </string>
+	<string>0 63 1280 715 0 0 1280 778 </string>
 	<key>NavigatorSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -68,14 +68,26 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {246, 366}}</string>
-			<string>{{0, 376}, {246, 210}}</string>
+			<string>{{0, 0}, {246, 421}}</string>
+			<string>{{0, 431}, {246, 242}}</string>
 		</array>
 	</dict>
 	<key>Widget</key>
 	<dict>
 		<key>Objects view expanded items</key>
-		<array/>
+		<array>
+			<array>
+				<integer>0</integer>
+			</array>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+			</array>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+			</array>
+		</array>
 		<key>Objects view last selections</key>
 		<array>
 			<array>
@@ -86,6 +98,9 @@
 		<array>
 			<integer>1</integer>
 			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>5</integer>
 		</array>
 		<key>Visible StackLayout Views</key>
 		<array>

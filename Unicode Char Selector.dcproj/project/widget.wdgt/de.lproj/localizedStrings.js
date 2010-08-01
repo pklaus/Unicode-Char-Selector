@@ -6,9 +6,11 @@
 */
 var localizedStrings = {
     "Ausgangsadresse": "Ausgangsadresse",
-    "eingestellter Code": "eingestellter Code",
+    "eingestellter Code": "resultierender Code",
     "Fertig": "Fertig",
-    "resultierendes Zeichen:": "resultierendes Zeichen:"
+    "resultierendes Zeichen": "resultierendes Zeichen",
+    "Schieberegler Empfindlichkeit": "Schieberegler Empfindlichkeit"
 };
+
 
 

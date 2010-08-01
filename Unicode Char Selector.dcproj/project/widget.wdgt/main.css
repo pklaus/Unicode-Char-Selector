@@ -157,24 +157,24 @@ body {
     color: white;
 }
 
-#text3 {
+#PhilippKlaus {
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
     color: rgb(255, 255, 255);
     font-size: 17px;
-    left: 79px;
     text-align: center;
     font-family: MinionPro-Medium;
-    top: 62px;
+    top: 148px;
+    left: 79px;
     right: 80px;
     width: auto;
-    bottom: 136px;
+    bottom: 50px;
     height: auto;
 }
 
-.selected #text3 {
+.selected #PhilippKlaus {
     color: white;
 }
 
@@ -202,34 +202,53 @@ body {
     height: auto;
 }
 
-#text4 {
+#made-by {
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
     color: rgb(255, 255, 255);
-    left: 111px;
-    top: 47px;
-    right: 116px;
-    width: auto;
-    bottom: 160px;
-    height: auto;
     font-size: 8px;
     text-align: center;
+    top: 133px;
+    left: 111px;
+    right: 116px;
+    width: auto;
+    bottom: 74px;
+    height: auto;
 }
 
-.selected #text4 {
+.selected #made-by {
     color: white;
 }
 
-#glassButton {
-    cursor: default;
-    -khtml-user-select: none;
+#multiplicator {
+    height: 18px;
     position: absolute;
     right: auto;
     bottom: auto;
     margin-top: 0px;
-    left: 79px;
-    top: 126px;
+    top: 43px;
+    width: 50px;
+    left: 167px;
+}
+
+#lbl_multiplicator {
+    font-size: 13px;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    top: 36px;
+    left: 47px;
+    right: 118px;
+    width: auto;
+    height: auto;
+}
+
+.selected #lbl_multiplicator {
+    color: white;
 }

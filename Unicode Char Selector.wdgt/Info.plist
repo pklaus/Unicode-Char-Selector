@@ -13,9 +13,9 @@
 	<key>CFBundleName</key>
 	<string>Unicode Char Selector</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.8.0</string>
+	<string>0.8.1</string>
 	<key>CFBundleVersion</key>
-	<string>0.8.0</string>
+	<string>0.8.1</string>
 	<key>CloseBoxInsetX</key>
 	<integer>17</integer>
 	<key>CloseBoxInsetY</key>
