@@ -32,6 +32,16 @@ body {
 	color: white;
 	text-align: center;
 }
+
 #made-by .small {
 	font-size: x-small;
+}
+
+a {
+	color: #FF0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FC0;
 }
