@@ -45,7 +45,7 @@ output = OUT_FILE_STATIC_HEADER
 currentVersionDisplayed = False
 versionScreenshot = False
 for fname in dirList:
-	if fname.find("-v"): versionScreenshot = True
+	if fname.find("-v") != -1: versionScreenshot = True
 	if versionScreenshot:
 		versionScreenshot = False
 		version = fname.replace(".png","").replace("screenshot-","")
