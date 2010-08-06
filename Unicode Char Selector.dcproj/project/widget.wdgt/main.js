@@ -163,6 +163,8 @@ function updateResults()
 
     document.getElementById("result_code").value = "0x"+rechne(rechne(document.getElementById("base").value.replace("0x",""),'dec')+sliderPosMult,'hex');
     
+    document.getElementById("lbl_offset").innerHTML = "+ 0x"+rechne(sliderPosMult,'hex');
+    
     document.getElementById("result_sign").value = String.fromCharCode(rechne(document.getElementById("base").value,'dec')+sliderPosMult);
 }
 

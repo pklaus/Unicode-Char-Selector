@@ -10,12 +10,14 @@ var dashcodePartSpecs = {
     "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
     "lbl_base_code": { "text": "Ausgangsadresse", "view": "DC.Text" },
     "lbl_multiplicator": { "text": "Schieberegler Empfindlichkeit", "view": "DC.Text" },
+    "lbl_offset": { "text": "+ 0x00", "view": "DC.Text" },
     "lbl_resulting_code": { "text": "eingestellter Code", "view": "DC.Text" },
     "lbl_resulting_sign": { "text": "resultierendes Zeichen", "view": "DC.Text" },
     "made-by": { "text": "made by", "view": "DC.Text" },
     "offset_slider": { "continuous": true, "creationFunction": "CreateHorizontalSlider", "onchange": "sliderHandler" },
     "PhilippKlaus": { "text": "Philipp Klaus", "view": "DC.Text" }
 };
+
 
 
 

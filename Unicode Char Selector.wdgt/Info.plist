@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BackwardsCompatibleClassLookup</key>
-	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
@@ -21,7 +19,7 @@
 	<key>CloseBoxInsetY</key>
 	<integer>17</integer>
 	<key>Height</key>
-	<integer>218</integer>
+	<integer>206</integer>
 	<key>MainHTML</key>
 	<string>main.html</string>
 	<key>Width</key>

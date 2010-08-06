@@ -25,7 +25,7 @@ body {
     bottom: 18px;
     width: 13px;
     height: 13px;
-    top: 185px;
+    top: 174px;
     left: 235px;
 }
 
@@ -39,8 +39,8 @@ body {
     top: 0px;
     left: 0px;
     right: 0px;
-    width: auto;
     bottom: 0px;
+    width: auto;
     height: auto;
 }
 
@@ -58,19 +58,19 @@ body {
     right: auto;
     bottom: auto;
     margin-top: 0px;
-    top: 161px;
-    width: 199px;
-    left: 32px;
+    top: 62px;
+    left: 19px;
+    width: 224px;
 }
 
 #base {
     position: absolute;
-    width: 70px;
     color: black;
     font-family: HelveticaNeue;
     font-size: 10pt;
     top: 31px;
-    left: 155px;
+    width: 46px;
+    left: 146px;
 }
 
 #result_code {
@@ -78,24 +78,24 @@ body {
     color: black;
     font-family: HelveticaNeue;
     font-size: 10pt;
-    top: 65px;
-    width: 70px;
-    left: 155px;
+    top: 94px;
+    left: 157px;
+    width: 50px;
 }
 
 #result_sign {
     position: absolute;
-    width: 70px;
     color: black;
     font-family: HelveticaNeue;
     border-top-left-radius: 0px 0px;
     border-top-right-radius: 0px 0px;
     border-bottom-left-radius: 0px 0px;
     border-bottom-right-radius: 0px 0px;
-    opacity: 1;
     font-size: 30pt;
-    left: 155px;
-    top: 101px;
+    top: 121px;
+    left: 157px;
+    width: 51px;
+    opacity: 1;
 }
 
 #lbl_base_code {
@@ -105,10 +105,10 @@ body {
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    top: 38px;
     text-align: right;
-    left: 19px;
-    right: 121px;
+    left: 13px;
+    top: 33px;
+    right: 127px;
     width: auto;
     height: auto;
 }
@@ -123,13 +123,13 @@ body {
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    top: 112px;
-    left: 25px;
     font-family: 'Lucida Grande';
     text-align: right;
-    right: 121px;
+    top: 127px;
+    left: 11px;
+    right: 119px;
     width: auto;
-    bottom: 56px;
+    bottom: 41px;
     height: auto;
 }
 
@@ -144,12 +144,12 @@ body {
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    top: 72px;
     text-align: right;
-    left: 19px;
-    right: 121px;
+    top: 96px;
+    left: 9px;
+    right: 119px;
     width: auto;
-    bottom: 130px;
+    bottom: 91px;
     height: auto;
 }
 
@@ -166,11 +166,11 @@ body {
     font-size: 17px;
     text-align: center;
     font-family: MinionPro-Medium;
-    top: 148px;
+    top: 143px;
     left: 79px;
     right: 80px;
     width: auto;
-    bottom: 50px;
+    bottom: 34px;
     height: auto;
 }
 
@@ -211,11 +211,11 @@ body {
     color: rgb(255, 255, 255);
     font-size: 8px;
     text-align: center;
-    top: 133px;
-    left: 111px;
-    right: 116px;
+    left: 90px;
+    top: 128px;
+    right: 92px;
     width: auto;
-    bottom: 74px;
+    bottom: 61px;
     height: auto;
 }
 
@@ -250,5 +250,24 @@ body {
 }
 
 .selected #lbl_multiplicator {
+    color: white;
+}
+
+#lbl_offset {
+    font-size: 13px;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    top: 33px;
+    text-align: left;
+    left: 202px;
+    right: 9px;
+    width: auto;
+    height: auto;
+}
+
+.selected #lbl_offset {
     color: white;
 }

@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <script type="text/javascript" src="AppleClasses/AppleAnimator.js" charset="utf-8"></script>
-    <script type="text/javascript" src="AppleClasses/AppleButton.js" charset="utf-8"></script>
-    <script type="text/javascript" src="AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
     <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
     <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
     <script type="text/javascript" src="main.js" charset="utf-8"></script>
-    <script type="text/javascript" src="AppleClasses/AppleSlider.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleSlider.js" charset="utf-8"></script>
 </head>
 <body onload="load();">
     <div id="front">
@@ -17,17 +17,18 @@
         <div id="info"></div>
         <div id="offset_slider" style="height: 22px; -apple-dashboard-region: dashboard-region(control rectangle); "></div>
         <input id="base" type="text" name="" value="0x2192" onkeydown="inputHandler(event)" onchange="inputHandler(event)" onkeypress="inputHandler(event)" onkeyup="inputHandler(event)">
-        <input id="result_code" type="text" name="" value="0x2192">
+        <input id="result_code" type="text" name="" value="0x2192" disabled="disabled">
         <input id="result_sign" type="text" name="" value="→">
         <div id="lbl_base_code"></div>
         <div id="lbl_resulting_sign"></div>
         <div id="lbl_resulting_code"></div>
+        <div id="lbl_offset"></div>
     </div>
     <div id="back">
         <img id="backImg" src="Parts/Images/back.png" alt="">
         <div id="done"></div>
         <div id="PhilippKlaus" onclick="openWebsite(event)"></div>
-        <div id="image"><img src="Images/swirl_grafik_fuer-dashboard-about.png" id="inner_image"></div>
+        <div id="image"><img src="Images/about_swirl_exported.png" id="inner_image"></div>
         <div id="made-by"></div>
         <select id="multiplicator" onchange="changedMultiplicator(event)">
             <option id="option" value="10">x1</option>
