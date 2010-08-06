@@ -1,5 +1,5 @@
 body {
-	background: #A7A7A7;
+	background-color: #123;
 }
 
 #main_container {
@@ -10,10 +10,11 @@ body {
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	color: #F2FFFF;
+	color: #FFFFDB;
 	/* style properties*/
 	background-color: #0A0A30;
 	/* width: 700px; */
 	margin: 35px auto;
 	padding: 20px;
+	width: 400px;
 }
