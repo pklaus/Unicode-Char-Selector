@@ -32,7 +32,7 @@ OUT_FILE_DIVIDER = """
 ## Screenshot of the current version
 
 Screenshot of the current version  
-![Screenshot of the current version](./screenshots/%s.png)
+![Screenshot of the current version](./screenshots/%s)
 
 ## Screenshots of previous versions
 

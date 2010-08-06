@@ -1,10 +1,15 @@
 #main_container {
-	background-color: #226;
-	margin-top: 35px;
-	margin-right: auto;
-	margin-left: auto;
-	width: 700px;
-	margin-bottom: 30px;
+	/* font properties*/
+	font-family: 'ArialMT', 'Arial', sans-serif;
+	font-size: 15px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
 	color: #DFF;
+	/* style properties*/
+	background-color: #226;
+	width: 700px;
+	margin: auto 35px;
 	padding: 20px;
 }
