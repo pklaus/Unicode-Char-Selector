@@ -21,16 +21,33 @@
 
 
 import os
-path="./screenshots/"
+BASE_PATH = "./screenshots/"
+OUT_FILE = "./index.markdown"
+OUT_FILE_STATIC_HEADER = """---
+layout: base
+title: Unicode Char Selector
+---
+
+## Screenshot of the current version
+
+[Screenshot of the current version](./screenshots/screenshot-current.png)
+
+## Screenshots of previous versions
+
+"""
+
 
 pdf, placeholder = False, False
-dirList=os.listdir(path)
+dirList = os.listdir(BASE_PATH)
 dirList.sort(reverse=True)
-output = ""
+output = OUT_FILE_STATIC_HEADER
 for fname in dirList:
     if fname.find("-v") != -1: versionScreenshot = True
     if versionScreenshot:
         version = fname.replace(".png","").replace("screenshot-","")
-        output += "* [Screenshot of version %s](http://pklaus.github.com/Unicode-Char-Selector/screenshots/%s)\n" % (version, fname)
+        output += "![Screenshot of version %s](http://pklaus.github.com/Unicode-Char-Selector/screenshots/%s)\n" % (version, fname)
     	versionScreenshot = False
-print output
+
+f = open(OUT_FILE, 'w')
+f.write(output)
+f.close()
