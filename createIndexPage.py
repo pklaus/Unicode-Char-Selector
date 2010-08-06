@@ -31,7 +31,7 @@ title: Unicode Char Selector
 OUT_FILE_DIVIDER = """
 ## Screenshot of the current version
 
-Screenshot of the current version  
+Screenshot of the current version (%s):  
 ![Screenshot of the current version](./screenshots/%s)
 
 ## Screenshots of previous versions
@@ -44,11 +44,12 @@ dirList.sort(reverse=True)
 output = OUT_FILE_STATIC_HEADER
 currentVersionDisplayed = False
 for fname in dirList:
-	if not currentVersionDisplayed:
-		output += OUT_FILE_DIVIDER % (fname)
-		currentVersionDisplayed = True
 	version = fname.replace(".png","").replace("screenshot-","")
-	output += "Screenshot of version %s  \n![Screenshot of version %s](./screenshots/%s)\n\n" % (version, version, fname)
+	if not currentVersionDisplayed:
+		output += OUT_FILE_DIVIDER % (version, fname)
+		currentVersionDisplayed = True
+	else:
+		output += "Screenshot of version %s:  \n![Screenshot of version %s](./screenshots/%s)\n\n" % (version, version, fname)
 
 f = open(OUT_FILE, 'w')
 f.write(output)
