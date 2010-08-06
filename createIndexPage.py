@@ -30,7 +30,8 @@ title: Unicode Char Selector
 
 ## Screenshot of the current version
 
-[Screenshot of the current version](./screenshots/screenshot-current.png)
+Screenshot of the current version  
+![Screenshot of the current version](./screenshots/screenshot-current.png)
 
 ## Screenshots of previous versions
 
@@ -45,7 +46,7 @@ for fname in dirList:
     if fname.find("-v") != -1: versionScreenshot = True
     if versionScreenshot:
         version = fname.replace(".png","").replace("screenshot-","")
-        output += "![Screenshot of version %s](http://pklaus.github.com/Unicode-Char-Selector/screenshots/%s)\n" % (version, fname)
+        output += "Screenshot of version %s  \n![Screenshot of version %s](http://pklaus.github.com/Unicode-Char-Selector/screenshots/%s)\n\n" % (version, version, fname)
     	versionScreenshot = False
 
 f = open(OUT_FILE, 'w')
