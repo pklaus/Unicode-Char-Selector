@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CYLastWindowPosition</key>
+	<string>{603, 143}</string>
 	<key>ContentSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -17,7 +19,7 @@
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>5</integer>
+	<integer>0</integer>
 	<key>DeploymentOptions</key>
 	<dict>
 		<key>Destination</key>
@@ -26,6 +28,8 @@
 		<string>philipp.l.klaus@web.de</string>
 		<key>SavePath</key>
 		<string>/Users/pklaus/Programmierung/Unicode Char Selector</string>
+		<key>WidgetDeployName</key>
+		<string>Unicode Char Selector.dcproj</string>
 		<key>enableSimulation</key>
 		<true/>
 		<key>simulatedHost</key>
@@ -50,13 +54,13 @@
 		<key>ContentSplitViewConfig</key>
 		<integer>5</integer>
 		<key>SplitViewConfig</key>
-		<integer>1</integer>
+		<integer>3</integer>
 		<key>_indexOfCollapsedView</key>
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {246, 352}}</string>
-			<string>{{0, 362}, {246, 275}}</string>
+			<string>{{0, 0}, {246, 372}}</string>
+			<string>{{0, 382}, {246, 291}}</string>
 		</array>
 	</dict>
 	<key>Widget</key>
@@ -91,11 +95,7 @@
 			</array>
 		</array>
 		<key>Objects view last selections</key>
-		<array>
-			<array>
-				<integer>5</integer>
-			</array>
-		</array>
+		<array/>
 		<key>Visible StackLayout Views</key>
 		<array>
 			<string>front</string>

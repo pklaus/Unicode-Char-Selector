@@ -271,3 +271,20 @@ body {
 .selected #lbl_offset {
     color: white;
 }
+
+#button {
+    font-family: HelveticaNeue-Bold;
+    font-size: 12px;
+    text-align: center;
+    cursor: default;
+    -khtml-user-select: none;
+    position: absolute;
+    right: auto;
+    margin-top: 0px;
+    overflow: hidden;
+    width: 131px;
+    left: 67px;
+    top: 183px;
+    bottom: 1px;
+    height: auto;
+}

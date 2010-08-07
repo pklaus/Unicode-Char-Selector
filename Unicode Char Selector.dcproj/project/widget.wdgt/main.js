@@ -210,3 +210,17 @@ function changedMultiplicator(event)
 {
     setSliderMultiplicator(event.target.value);
 }
+
+
+function pasteToApplication(event)
+{
+    // source: http://forums.macosxhints.com/showthread.php?t=46078 and http://forums.macosxhints.com/showthread.php?p=117551#post117551
+    
+    var sliderPosMult = Math.round(getSliderMultiplicator()*sliderPos);
+    //var script = "/usr/bin/osascript -e 'tell application \"System Events\"' -e 'tell process \"finder\"' -e 'activate' -e 'keystroke tab using {command down}' -e 'end tell' -e 'set front_app to (path to frontmost application as Unicode text)' -e 'tell application front_app' -e 'activate' -e 'set clipboardStack to the clipboard' -e 'set the clipboard to \"" + String.fromCharCode(rechne(document.getElementById("base").value,'dec')+sliderPosMult) + "\"' -e 'keystroke \"v\" using {command down}' -e 'set the clipboardStack to d' -e 'end tell' -e 'end tell'";
+    //script = "/usr/bin/osascript -e 'beep 5'";
+    //script = "/usr/bin/osascript -e 'tell application \"TextEdit\"' -e 'set text of document 1 to text of document 1 & character id 300' -e 'end tell'";
+    var script = "/usr/bin/osascript ./bin/paste-char.scpt " + String.fromCharCode(rechne(document.getElementById("base").value,'dec')+sliderPosMult);
+    widget.system(script, null);
+    //widget.openApplication("com.apple.Dock");
+}

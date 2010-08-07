@@ -5,6 +5,7 @@
  code generator otherwise the changes will be lost.
  */
 var dashcodePartSpecs = {
+    "button": { "creationFunction": "CreateButton", "leftImageWidth": 5, "onclick": "pasteToApplication", "rightImageWidth": 5, "text": "copy & paste" },
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Fertig" },
     "image": { "view": "DC.ImageLayout" },
     "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
@@ -17,6 +18,7 @@ var dashcodePartSpecs = {
     "offset_slider": { "continuous": true, "creationFunction": "CreateHorizontalSlider", "onchange": "sliderHandler" },
     "PhilippKlaus": { "text": "Philipp Klaus", "view": "DC.Text" }
 };
+
 
 
 

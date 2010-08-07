@@ -6,12 +6,14 @@
 */
 var localizedStrings = {
     "Ausgangsadresse": "Base Hex Code",
+    "copy & paste": "copy & paste",
     "eingestellter Code": "Code with Offset",
     "Fertig": "Done",
     "made by": "made by",
     "resultierendes Zeichen": "Resulting Char",
     "Schieberegler Empfindlichkeit": "Slider Sensitivity"
 };
+
 
 
 

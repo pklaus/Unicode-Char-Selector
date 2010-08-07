@@ -6,12 +6,14 @@
 */
 var localizedStrings = {
     "Ausgangsadresse": "Ausgangsadresse",
+    "copy & paste": "kopieren & einfügen",
     "eingestellter Code": "resultierender Code",
     "Fertig": "Fertig",
     "made by": "erstellt von",
     "resultierendes Zeichen": "resultierendes Zeichen",
     "Schieberegler Empfindlichkeit": "Schieberegler Empfindlichkeit"
 };
+
 
 
 
